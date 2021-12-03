@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+:root {
+    --PT: "PT SERIF", sans-serif;
+}
+
+body {
+    overflow: hidden;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #E535CC, #35E5A1);
+}
+
+section .colour {
+    position: absolute;
+    filter: blur(150px);
+}
+
+section .colour:nth-child(1) {
+    top: -350px;
+    width: 600px;
+    height: 600px;
+    background: #b74ad4;
+}
+
+section .colour:nth-child(2) {
+    left: 100px;
+    width: 500px;
+    height: 500px;
+    bottom: -150px;
+    background: #ffa500;
+}
+
+section .colour:nth-child(3) {
+    right: 100px;
+    bottom: 50px;
+    width: 300px;
+    height: 300px;
+    background: #2b67f3;
+}
+
+.box {
+    position: relative;
+}
+
+.box .kub {
+    position: absolute;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    background: #07F9E550;
+    animation: animate 10s linear infinite;
+    box-shadow: 0 25px 45px rgba(0, 0, 0 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+@keyframes animate {
+    0%,
+    100% {
+        transform: translateY(-40px);
+    }
+    50% {
+        transform: translateY(40px);
+    }
+}
+
+.box .kub:nth-child(1) {
+    top: -200px;
+    left: -300px;
+    width: 100px;
+    height: 100px;
+}
+
+.box .kub:nth-child(2) {
+    z-index: 2;
+    top: 150px;
+    left: -100px;
+    width: 120px;
+    height: 120px;
+}
+
+.box .kub:nth-child(3) {
+    z-index: 2;
+    right: 170px;
+    bottom: 50px;
+    width: 80px;
+    height: 80px;
+}
+
+.box .kub:nth-child(4) {
+    bottom: -80px;
+    left: 270px;
+    width: 50px;
+    height: 50px;
+}
+
+.box .kub:nth-child(5) {
+    top: -100px;
+    left: 230px;
+    width: 60px;
+    height: 60px;
+}
+
+button {
+    border: 0;
+    border-radius: 10px;
+    padding: 25px 60px;
+    font: bold 16px var(--PT);
+    color: #b74ad490;
+    cursor: pointer;
+    transition: all;
+}
+
+a {
+    border-radius: 10px;
+}
+
+a:hover {
+    box-shadow: 5px 10px 18px #fff;
+}

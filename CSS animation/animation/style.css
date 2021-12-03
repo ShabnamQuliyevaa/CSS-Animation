@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root {
+    --banger: "Bangers", sans-serif;
+}
+
+.general {
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.bg {
+    background-image: url('img/bg.jpg');
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+}
+
+.word h1 {
+    font: 300 70px var(--banger);
+    width: 250px;
+    color: #ff001c;
+    text-shadow: 3px 3px 5px #fff;
+    position: absolute;
+    left: 50%;
+    top: -200px;
+    transform: translateX(-50%);
+    animation: word 5s 8s forwards;
+}
+
+@keyframes word {
+    from {
+        top: -300px;
+    }
+    to {
+        top: 15%;
+    }
+}
+
+.deer {
+    background-image: url('img/deer.gif');
+    background-size: 100% 100%;
+    right: -300px;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    animation: deer 15s linear;
+}
+
+@keyframes deer {
+    from {
+        right: -300px;
+    }
+    to {
+        right: 100%;
+    }
+}
+
+.children {
+    background-image: url('img/Children.gif');
+    background-size: 100% 100%;
+    width: 400px;
+    height: 190px;
+    position: absolute;
+    left: 60%;
+    bottom: 30%;
+}
+
+.tree {
+    background-image: url('img/tree2.gif');
+    background-size: 100% 100%;
+    width: 140px;
+    height: 210px;
+    position: absolute;
+    left: 30%;
+    bottom: 30%;
+}
+
+.snowman1 {
+    background-image: url('img/snowman1.gif');
+    background-size: 100% 100%;
+    width: 200px;
+    height: 200px;
+    left: -200px;
+    bottom: 0;
+    position: absolute;
+    animation: snowman1 10s linear 5s forwards;
+}
+
+@keyframes snowman1 {
+    from {
+        left: -200px;
+    }
+    to {
+        left: 70%;
+    }
+}
+
+.snowman2 {
+    background-image: url('img/snowman2.gif');
+    background-size: 100% 100%;
+    width: 275px;
+    height: 200px;
+    right: -300px;
+    bottom: 15%;
+    position: absolute;
+    animation: snowman2 10s linear forwards;
+}
+
+@keyframes snowman2 {
+    from {
+        right: -300px;
+    }
+    to {
+        right: 70%;
+    }
+}
+
+.snowman3 {
+    background-image: url('img/snowman3.gif');
+    background-size: 100% 100%;
+    width: 100px;
+    height: 120px;
+    bottom: 40%;
+    position: absolute;
+    animation: snowman3 15s linear forwards;
+}
+
+@keyframes snowman3 {
+    from {
+        left: -200px;
+    }
+    to {
+        left: 10%;
+    }
+}
+
+.snow {
+    background-image: url('img/snow.gif');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
